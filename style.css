@@ -4,6 +4,10 @@
     font-family: Oswald, sans-serif
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Section 1 */
 
 body, html {
@@ -11,8 +15,8 @@ body, html {
   }
 
 li img {
-    width: 4em;
-    height: 4em;
+    width: 3.5em;
+    height: 3.5em;
 }
 
 .intro {
@@ -59,11 +63,6 @@ h1 {
 
 /* section two */
 
-.content-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 embed {
     margin: 2.5em 0 2.5em 2.5em;
     width: 50%;
@@ -71,10 +70,12 @@ embed {
 }
 
 .content p {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 35%;
     float: right;
-    margin: 3.5em;
-    font-size: 1.3rem;
+    margin: 4vw;
+    font-size: 1.2rem;
 }
 
 /* footer */
@@ -82,25 +83,81 @@ embed {
 footer {
     position: relative;
     height: 100px;
-    background-color: black;
+    background-color: rgb(12, 12, 12);
 }
 
 footer p {
     color: white;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 footer img {
     max-width: 90%;
     max-height: 90%;
     position: absolute;
-    left: 50%;
+    left: 48%;
     bottom: 5px;
 }
 
-/*
-@media screen and (width: 400px) {
-    h1 {
-        font-size: 6rem;
+#contact {
+    padding: 1em;
+    margin: 1em;
+}
+
+#legal-stuff {
+    background-color: black;
+    margin-top: -20px;
+    padding: 2em;
+}
+
+/* Resizing section 2 for other screens */
+
+@media only screen and (max-width: 992px) {
+    .content p {
+        font-size: 1rem;
+        margin: 1em;
+    }
+
+    embed {
+        margin: 0.5em 0 0.5em 0.5em;
+        width: 55%;
+        height: 28em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .content p {
+        font-size: 0.5rem;
+        margin: 0.1em;
+    }
+}
+
+/* Resizing footer */
+
+@media only screen and (max-width: 400px) {
+    footer img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    #contact {
+        margin: 0;
+    }
+
+    #legal-stuff {
+        background-color: black;
+        margin-top: -5px;
+        padding: 2em;
+    }
+
+    footer p {
+        font-weight: 100;
     }
 }

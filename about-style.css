@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Oswald, sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section 1 */
+
+body, html {
+    height: 100%;
+  }
+
+li img {
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.intro {
+    background-image: url("/20211211_163400.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    padding: 0.75em;
+}
+
+li {
+    display: inline;  
+    float: right;
+    margin: 1.5em 1em 1em 1em; 
+    font-weight: 800;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/* Grid */
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: 5em;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    position: relative;
+    height: 100px;
+    background-color: rgb(12, 12, 12);
+}
+
+footer p {
+    color: white;
+    font-weight: 600;
+}
+
+footer img {
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    left: 48%;
+    bottom: 15px;
+}
+
+#contact {
+    padding: 1em;
+    margin: 1em;
+}
+
+#legal-stuff {
+    background-color: black;
+    margin-top: -20px;
+    padding: 2em;
+}
+
+/* Resizing footer */
+
+@media only screen and (max-width: 400px) {
+    footer img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    #contact {
+        margin: 0;
+    }
+
+    #legal-stuff {
+        background-color: black;
+        margin-top: -5px;
+        padding: 2em;
+    }
+
+    footer p {
+        font-weight: 100;
+    }
+}

@@ -89,6 +89,35 @@ h2 {
     text-align: center;
 }
 
+/* Resizing main */ 
+
+@media only screen and (max-width: 800px) {
+    .card img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        margin: 2em 2em 2em 5em;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 1em 1em 1em 2em;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
 /* footer */
 
 footer {
@@ -149,3 +178,4 @@ footer img {
         font-weight: 100;
     }
 }
+

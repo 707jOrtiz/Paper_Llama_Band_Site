@@ -58,7 +58,7 @@ h1 {
     align-items: center;
     min-height: 105vh;
     color: white;
-    font-size: 5.5rem;
+    font-size: 10vw;
 }
 
 /* section two */
@@ -83,7 +83,7 @@ embed {
 .gallery img {
     max-width: 25%;
     max-height: 25%;
-    margin: -0.11em;
+    margin: -0.118em;
 }
 
 /* footer */

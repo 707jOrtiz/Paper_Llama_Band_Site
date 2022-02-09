@@ -20,7 +20,7 @@ li img {
 }
 
 .intro {
-    background-image: url("/20211211_163400.jpg");
+    background-image: url("./20211211_163400.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
